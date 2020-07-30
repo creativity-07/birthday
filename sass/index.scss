@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background1 {
+    background-image: url('../images/initbgm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+    .opacity_background {
+        background-color: rgba(255, 200, 49, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+
+        .info {
+            max-width: 340px;
+            margin: 0 auto;
+            margin-top: 120px;
+
+            h1 {
+                font-size: 36px;
+                line-height: 50px;
+                text-align: center;
+                color: #ea271d;
+                font-weight: bold;
+            }
+
+            ol {
+                margin: 0;
+                padding-left: 1rem;
+                color: #fff;
+                text-shadow: 0 0 5px #434642;
+
+                li {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+
+                color: deeppink;
+                background-color: rgba(255, 255, 255, 0.7);
+                border: 1px solid deeppink;
+                border-radius: 5px;
+                padding: 10px;
+                outline: none;
+                font-size: 20px;
+                font-family: ' 微軟正黑體';
+                padding: 10px;
+                position: absolute;
+                transition: all 0.3s ease-in-out;
+                left: 50%;
+                transform: translateX(-50%);
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: deeppink;
+                    opacity: 0.5;
+                    border: 1px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

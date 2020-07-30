@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恭喜正式開工~</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="app" id=#app>
+        <transition enter-active-class="fade-enter-active" leave-active-class="fade-leave-active">
+            <div class="background1" v-if="show">
+                <div class="opacity_background">
+                    <div class="info">
+                        <h1>注意事項</h1>
+                        <ol>
+                            <li>
+                                只有此頁有作RWD設計，請轉移至桌幾或筆電享受較佳的使用者體驗。
+                            </li>
+                            <br>
+                            <li>
+                                如若當下還未收到合格通知的話，請先暫時離開本頁。
+                            </li>
+                            <br>
+                            <li>
+                                請確實保管好收到的禮物(含贈品)，遺失的話將不予補發。
+                            </li>
+                        </ol>
+                        <p @click="show = !show">close</p>
+                    </div>
+                </div>
+            </div>
+            <transition />
+            <div class="background2">
+
+            </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
