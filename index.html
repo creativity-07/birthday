@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>生日快樂ヾ(●゜▽゜●)♡</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>恭喜正式開工~</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-
-<body>
-    <div class="app" id=#app>
-        <transition enter-active-class="fade-enter-active" leave-active-class="fade-leave-active">
-            <div class="background1" v-if="show">
-                <div class="opacity_background">
-                    <div class="info">
-                        <h1>注意事項</h1>
-                        <ol>
-                            <li>
-                                只有此頁有作RWD設計，請轉移至桌幾或筆電享受較佳的使用者體驗。
-                            </li>
-                            <br>
-                            <li>
-                                如若當下還未收到合格通知的話，請先暫時離開本頁。
-                            </li>
-                            <br>
-                            <li>
-                                請確實保管好收到的禮物(含贈品)，遺失的話將不予補發。
-                            </li>
-                        </ol>
-                        <p @click="show = !show">close</p>
-                    </div>
-                </div>
+  <body>
+    <div class="app" id="app">
+      <transition name="fade" mode="out-in">
+        <div class="background1" v-if="open" key="en">
+          <div class="opacity_background">
+            <div class="info">
+              <h1>注意事項</h1>
+              <ol>
+                <li>
+                  只有此頁有作RWD設計，請轉移至桌幾或筆電享受較佳的使用者體驗。
+                </li>
+                <br />
+                <li>
+                  25歲的姿羽同學請立刻離開此頁，本卡片只歡迎更加成熟、懂得拉比豆可愛之處的姿羽姊姊。
+                </li>
+                <br />
+                <li>1/12晚上24:00以後會自動刪檔，逾時不候~</li>
+              </ol>
+              <p @click="open = ! open">close</p>
             </div>
-            <transition />
-            <div class="background2">
+          </div>
+        </div>
+        <div class="background2" v-else key="tw">
+          <div class="top"></div>
+          <div class="down">
+            <h2>親愛的姿羽同學:</h2>
+            <p class="space">
+              生日快樂呀!雖然在這一年的時光中比起我，你應該更常與家人、朋友、學姊以及樓下鄰居的<br />好朋友企鵝相處，但還請容許我給你獻上小小的祝福吧(❁´ω`❁)*✲ﾟ*
+            </p>
+            <br />
+            <p class="space">
+              工作了快兩年的你，或多或少也開始在職場扮演著領導者的角色了吧!祝福你能妥善的組織你的小組，和同事之間有良好的互動關係，在你身體不適的時候可以cover你的工作，讓你能作一個サガジェンヌd(d＇∀＇)
+            </p>
+            <br />
+            <p class="space">
+              新的一年，你也邁向了全新的挑戰，祝福你能考上自己喜歡的科系，就算結果不盡人意，我從來不認為失敗和後悔是毫無意義的，這些東西絕對會給下一次帶來幫助，只要把這些全部克服，未來你就一定不會輸給任何人了。(・∀・)つ③
+            </p>
+            <br />
+            <p class="space">最後，邁向願能成為，你所願的✧*｡٩(ˊᗜˋ*)و✧*</p>
+            <br />
 
-            </div>
+            <div class="last">隔壁同學</div>
+          </div>
+        </div>
+      </transition>
     </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="js/index.js"></script>
-
-
-</body>
-
+    <!--   P.S.雖然有做其他版本的卡片出來，但總覺得還是正常的卡片比較適合，絕對不是偷懶才用和去年一樣的喔(๑•́ ₃ •̀๑) -->
+    <!-- 感謝的話:謝謝你去年找我參加鐵人競賽喔!雖然過程中我曾經轉換跑道從工程師跳到建築師，但多虧有你在前面一路領跑，我才得以堅持到最後。不論是運動或工作、數學或環工、長髮或短髮，堅持作自己的姿羽同學最帥氣迷人了，祝福你未來能依舊耀眼，成就你的夢想σ(´∀｀*) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
