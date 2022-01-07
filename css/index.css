@@ -1,7 +1,13 @@
 @charset "UTF-8";
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
 }
 
 .background1 {
@@ -23,6 +29,7 @@ body {
   max-width: 340px;
   margin: 0 auto;
   margin-top: 120px;
+  padding: 0 20px;
 }
 .background1 .opacity_background .info h1 {
   font-size: 36px;
@@ -55,6 +62,7 @@ body {
   transition: all 0.3s ease-in-out;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 30px;
 }
 .background1 .opacity_background .info p:hover {
   cursor: pointer;
@@ -62,6 +70,72 @@ body {
   opacity: 0.5;
   border: 1px solid white;
   color: white;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #424740;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.8s;
+}
+
+.fade-enter {
+  transform: scale(0);
+}
+
+.fade-leave-to {
+  transform: scale(0);
+}
+
+.background2 {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 12px;
+  padding: 20px;
+}
+.background2 .down {
+  border: 1px solid #c8c4c4;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px 0px #dcdcdc;
+}
+.background2 .top {
+  background-image: url(../images/banner.JPG);
+  background-size: 100%;
+  padding-top: 66%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #c8c4c4;
+  box-shadow: -3px -3px 5px 0px #dcdcdc;
+}
+.background2 p,
+.background2 div.last {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3b3c3a;
+}
+.background2 div.last {
+  font-size: 20px;
+}
+.background2 h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.space {
+  text-indent: 2em;
+}
+
+.last {
+  text-align: right;
 }
 
 /*# sourceMappingURL=index.css.map */
