@@ -1,16 +1,8 @@
 var main_content = new Vue({
     el: "#app",
     data: {
-        open: false,
-
-
-
-
-
-
-
-
-
+        open: true,
+       
 
     },
 
