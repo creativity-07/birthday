@@ -1,0 +1,10 @@
+name: 'Mailto UI'
+type: module
+description: 'A simple way to enhance your mailto links with a convenient user interface.'
+package: 'User Interface'
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-07-25
+version: '1.0.1'
+project: 'mailtoui'
+datestamp: 1595697387

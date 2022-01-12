@@ -1,16 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>生日快樂ヾ(●゜▽゜●)♡</title>
-
+    <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="swiper.min.js"></script>
     <link rel="icon" href="./saga.ico" />
   </head>
 
@@ -27,7 +33,7 @@
                 </li>
                 <br />
                 <li>
-                  25歲的姿羽同學請立刻離開此頁，本卡片只歡迎更加成熟、懂得拉比豆可愛之處的姿羽姊姊。
+                  25歲的姿羽同學請立刻離開此頁，本卡片只歡迎更加成熟、懂得欣賞純愛之美的姿羽姊姊。
                 </li>
                 <br />
                 <li>1/12晚上24:00以後會自動刪檔，逾時不候~</li>
@@ -56,16 +62,90 @@
               最後，祝福你2022年的計劃都能達成，願能成為，你所願的✧*｡٩(ˊᗜˋ*)و✧*
             </p>
             <br />
+            <p class="higlights-block">
+              <a
+                href="mailto:kevin8250778@gmail.com?subject=純愛貼圖%20拉比豆大放送&body=謝謝你這一年來的照顧%0A新的一年伴著我新作的純愛貼圖，請多指教~~~"
+                class="higlights mailtoui"
+              >
+                純愛贊助
+              </a>
+            </p>
+            <p class="this-album higlights higlights-block">精彩回顧</p>
+            <p class="zunko higlights higlights-block">偶像支援</p>
 
             <div class="last">隔壁同學</div>
           </div>
         </div>
       </transition>
     </div>
-    <!--   P.S.雖然有做其他版本的卡片出來，但總覺得還是正常的卡片比較適合，絕對不是偷懶才用和去年一樣的喔(๑•́ ₃ •̀๑) -->
-    <!-- 感謝的話:謝謝你去年找我參加鐵人競賽喔!雖然過程中我曾經轉換跑道從工程師跳到建築師，但多虧有你在前面一路領跑，我才得以堅持到最後。不論是運動或工作、數學或環工、長髮或短髮，堅持作自己的姿羽同學最帥氣迷人了，祝福你未來能依舊耀眼，成就你的夢想σ(´∀｀*) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <div class="lightbox common-lightbox album-lightbox" id="albums_list">
+      <div class="album-lightbox-container">
+        <!-- 上方swiper複製架構 -->
+        <div class="top-swiper-template hidden">
+          <div class="swiper-slide">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- 上方swiper -->
+        <div class="top-swiper-outer-container">
+          <!-- 關閉跳窗 -->
+          <div class="lightbox-close-container">
+            <div class="lightbox-close">
+              <img src="images/swiper-close.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-outer-content">
+            <div class="swiper-container one-img-swiper">
+              <div class="swiper-wrapper"></div>
+            </div>
+          </div>
+          <!-- 上一頁 -->
+          <div class="swiper-button-prev album-prev"></div>
+          <!-- 下一頁 -->
+          <div class="swiper-button-next album-next"></div>
+        </div>
+        <div class="container">
+          <p>
+            Love<span class="this-image">1</span>of<span class="total-image"
+              >6</span
+            >
+          </p>
+        </div>
+        <!-- 下方swiper複製架構 -->
+        <div class="bottom-swiper-template hidden">
+          <div class="swiper-slide">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+            <div class="photo-mask"></div>
+          </div>
+        </div>
+        <!-- 下方swiper -->
+        <div class="bottom-swiper-outer-container">
+          <div class="swiper-container small-img-swiper">
+            <div class="swiper-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox common-lightbox idol-content" id="idol">
+      <div class="lightbox-container">
+        <div class="inner-content">
+          <img src="images/zyunnko.jpg" alt="" />
+        </div>
+
+        <div class="lightbox-close">
+          <img src="images/swiper-close.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script
+      src="mailtoui.js"
+      data-options='{"title":"開啟信箱方式","buttonText1":"開啟Gmail信箱","buttonText2":"開啟Outlook信箱","buttonText3":"開啟Yahoo信箱","buttonText4":"開啟預設信箱"}'
+    ></script>
   </body>
 </html>
+<!-- 感謝的話:謝謝你去年找我參加鐵人競賽喔!雖然過程中我曾經轉換跑道從工程師跳到建築師，但多虧有你在前面一路領跑，我才得以堅持到最後。不論是運動或工作、數學或環工、長髮或短髮，堅持作自己的姿羽同學最帥氣迷人了，祝福你未來能依舊耀眼，成就你的夢想σ(´∀｀*) -->

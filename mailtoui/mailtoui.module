@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * This is the Mailto UI module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mailtoui_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.mailtoui':
+      $output = '';
+      $output .= '<h3>' . t('Mailto UI') . '</h3>';
+      $output .= '<p>' . t('A simple way to enhance your mailto links with a convenient user interface.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function mailtoui_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'mailtoui/mailtoui';
+}

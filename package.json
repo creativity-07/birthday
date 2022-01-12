@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mailtoui": "^1.0.3",
+    "module": "^1.2.5"
+  },
+  "name": "c",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativity-07/birthday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creativity-07/birthday/issues"
+  },
+  "homepage": "https://github.com/creativity-07/birthday#readme"
+}
